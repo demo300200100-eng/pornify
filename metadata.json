@@ -1,0 +1,6 @@
+{
+  "name": "سحر سينما | Velvet Glamour Videos",
+  "description": "منصة فيديو عصرية فاخرة لعرض ومشاركة مقاطع الفيديو بأعلى جودة مع لوحة تحكم شاملة ومشغل سينمائي متطور داخل الموقع.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

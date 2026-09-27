@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b0b0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #272730;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d97706;
+  }
+
+  .amber-glow {
+    box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.4), 0 0 10px -2px rgba(217, 119, 6, 0.3);
+  }
+
+  .text-amber-glow {
+    text-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+  }
+
+  .streamio-card {
+    background-color: #121217;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.25s ease-out;
+  }
+
+  .streamio-card:hover {
+    border-color: rgba(245, 158, 11, 0.4);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Anti-Download & Anti-Native-Controls: Completely suppress browser native controls, download buttons, and overflow menus */
+  video::-internal-media-controls-download-button,
+  video::-webkit-media-controls-download-button,
+  video::-webkit-media-controls-overflow-button,
+  video::-webkit-media-controls-enclosure,
+  video::-webkit-media-controls-panel,
+  video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  video {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+  }
+}
